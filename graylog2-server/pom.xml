@@ -574,7 +574,7 @@
                                 </goals>
                                 <configuration>
                                     <nodeVersion>v4.2.6</nodeVersion>
-                                    <npmVersion>2.11.2</npmVersion>
+                                    <npmVersion>3.7.1</npmVersion>
                                 </configuration>
                             </execution>
 
