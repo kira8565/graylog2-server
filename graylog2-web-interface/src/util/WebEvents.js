@@ -38,7 +38,7 @@ const WebEvents = {
   },
 
   events: {
-    INDEX_SETTINGS_UPDATE: 'index-settings:update',
+    INDEX_SETTINGS_UPDATE: 'index-configuration:update',
   },
 };
 
