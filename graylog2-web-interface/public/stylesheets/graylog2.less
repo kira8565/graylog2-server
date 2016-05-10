@@ -144,6 +144,20 @@ legend small {
   margin-top: 15px;
 }
 
+.content-head .actions-lg {
+  float: right;
+}
+
+.actions-lg .actions-container {
+  height: 60px;
+  margin-top: 10px;
+  padding-left: 50px;
+}
+
+.content-head .actions-sm {
+  padding-bottom: 15px;
+}
+
 .content-head .description-tooltips .fa-stack {
   margin-right: 3px;
 }
@@ -285,25 +299,6 @@ legend small {
 a.fields-set-chooser {
   margin-right: 2px;
   margin-left: 2px;
-}
-
-.messages {
-  font-size: 11px;
-  margin-top: 15px;
-  border-collapse: collapse;
-  width: 100%;
-  word-break: break-all;
-}
-
-.messages thead > tr {
-  color: #fff;
-}
-
-.messages thead th {
-  font-size: 11px;
-  font-weight: normal;
-  background-color: #222;
-  white-space: nowrap;
 }
 
 #result-graph-container {
@@ -1044,9 +1039,10 @@ td.limited {
 
 .dashboard {
   color: #333333;
-  margin-left: -10px;
   height: 100%;
-  overflow: hidden;
+  margin: 0;
+  overflow: auto;
+  width: 100%;
 }
 
 .dashboard .gridster .gs-w {
@@ -1070,7 +1066,9 @@ td.limited {
 }
 
 .dashboard .widget {
-  margin: 15px;
+  height: inherit;
+  margin: 0;
+  padding: 15px;
 }
 
 .dashboard .widget .widget-top {
@@ -1149,8 +1147,6 @@ td.limited {
   display: none;
 }
 
-/* New widgets */
-
 .datatable-badge {
   border-radius: 2px;
   display: inline-block;
@@ -1170,8 +1166,8 @@ td.limited {
   color: #E3E5E5;
 }
 
-.dashboard .gridster ul {
-  margin: 0;
+.dashboard .gridster {
+  margin-left: -10px;
   transition: none;
 }
 
@@ -1181,12 +1177,6 @@ td.limited {
 
 .dashboard .gridster.gs-resize-disabled .widget {
   cursor: default;
-}
-
-.dashboard .widget {
-  height: inherit;
-  margin: 0;
-  padding: 15px;
 }
 
 .dashboard .widget .dc-chart {
@@ -1304,8 +1294,6 @@ td.limited {
   vertical-align: middle;
 }
 
-/* End new widgets */
-
 .configuration-field-optional {
   margin-left: 5px;
   font-size: 11px;
@@ -1337,6 +1325,19 @@ td.limited {
 }
 
 .index-details {
+  margin-left: 5px;
+}
+
+.index-label {
+  vertical-align: text-top;
+}
+
+.index-label .label {
+  margin-right: 5px;
+}
+
+.index-more-actions {
+  font-size: 90%;
   margin-left: 5px;
 }
 
@@ -2257,8 +2258,17 @@ dl.message-details dd.stream-list ul li {
 }
 
 table.messages {
-  position: relative;
-  left: -13px;
+  position: static;
+  margin-left: -13px;
+  font-size: 11px;
+  margin-top: 15px;
+  border-collapse: collapse;
+  width: 100%;
+  word-break: break-all;
+}
+
+table.messages thead > tr {
+  color: #fff;
 }
 
 table.messages td, table.messages th {
@@ -2268,6 +2278,10 @@ table.messages td, table.messages th {
 
 table.messages > thead th {
   border: 0;
+  font-size: 11px;
+  font-weight: normal;
+  background-color: #222;
+  white-space: nowrap;
 }
 
 table.messages tr {
@@ -2704,4 +2718,9 @@ ul.pill-list > li {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
+}
+
+.field-analyzer {
+  margin-left: 0 !important;
+  margin-top: 10px !important;
 }
